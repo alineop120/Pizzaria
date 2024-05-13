@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+.logo img {
+    width: 100px;
+    border-radius: 50px;
+    
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 40px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #fd7709; 
+    border-bottom: 2px solid #fd7709;
+}
+
+nav ul li button {
+    background-color: #fd7709;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+nav ul li button:hover {
+    background-color: #ff8c39;
+}
+
+nav ul li button:focus {
+    outline: none;
+}
+
+.banner {
+    background-image: url('../imagens/file.png');
+    background-size: cover;
+    background-position: center bottom;
+    color: #fff;
+    padding: 50px 0 100px;
+    text-align: center;
+}
+
+.empresa {
+    padding: 50px;
+}
+
+.empresa-info {
+    display: flex;
+    align-items: center;
+}
+
+.empresa-texto {
+    flex: 1;
+}
+
+.empresa-imagem {
+    margin-right: 20px; /* Adiciona um espaçamento à direita da imagem */
+}
+
+.empresa-imagem img {
+    width: auto; /* Ajusta a largura automaticamente */
+    height: 200px; /* Define a altura desejada */
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.contato p {
+    margin: 5px 0;
+}
