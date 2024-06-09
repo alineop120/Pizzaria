@@ -1,0 +1,49 @@
+/* Estilos específicos para o cabeçalho */
+nav {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 50px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s ease; /* Adiciona uma transição suave para a mudança de cor do texto */
+}
+
+nav ul li a:hover {
+    color: #ff9900; /* Define a cor do texto ao passar o cursor sobre as opções */
+}
+
+nav ul li a.login-button{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: background-color 0.3s ease; /* Adiciona uma transição suave para a mudança de cor de fundo */
+}
+
+nav ul li a.login-button:hover {
+    background-color: rgb(165, 103, 9); /* Define a cor de fundo ao passar o cursor sobre as opções */
+}
+
+.login-button {
+    background-color: #ff9900;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+}
+

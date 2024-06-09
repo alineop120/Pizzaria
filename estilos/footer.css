@@ -1,0 +1,11 @@
+/* Estilos específicos para o rodapé */
+.contato {
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.contato p {
+    text-align: center; /* Centraliza o texto horizontalmente */
+    line-height: 1.5; /* Define a altura da linha para centralizar verticalmente */
+}

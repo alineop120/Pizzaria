@@ -1,0 +1,79 @@
+/* Estilos específicos para o conteúdo principal */
+.logo-container {
+    position: relative;
+    margin: -100px auto 0; /* Centraliza horizontalmente e move para cima */
+    text-align: center;
+    padding: 10%;
+}
+
+.logo-container img {
+    width: 300px;
+    height: 200px;
+    border: 40px solid transparent;
+    border-radius: 200%;
+}
+
+.menu {
+    position: absolute;
+    top: calc(50px + 20px); /* Altura do botão (50px) + margem inferior do botão (20px) */
+    height: calc(100% - 70px); /* Altura da janela - altura do botão e margem */
+    width: 41.6%;
+    background-color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    padding: 100px;
+    box-sizing: border-box;
+    z-index: 2;
+}
+
+.menu h2 {
+    font-size: 36px;
+    font-family: 'Garamond', serif;
+    color: white;
+}
+
+.menu p {
+    font-size: 18px;
+    color: white;
+    margin-bottom: 50px; /* Adiciona espaço abaixo do parágrafo */
+}
+
+.menu-button {
+    background-color: #ff9900;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.menu-button:hover {
+    background-color: rgba(165, 103, 9);
+}
+
+.pizza-image {
+    position: fixed;
+    bottom: 70px;
+    right: 1px;
+    width: 1120px;
+    z-index: 1;
+}
+
+.pizza-image img {
+    width: 100%;
+    height: auto;
+}
+
+.pizzaria-image {
+    position: absolute;
+    bottom: 70px;
+    width: auto; /* Largura automática */
+    z-index: 1;
+}
+
+.pizzaria-image img {
+    width: 799px; /* Ajuste conforme necessário */
+    height: 747px;
+}
