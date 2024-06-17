@@ -1,7 +1,7 @@
 /* Estilos específicos para o conteúdo principal */
 .logo-container {
     position: relative;
-    margin: -100px auto 0; /* Centraliza horizontalmente e move para cima */
+    margin: -100px auto 0px; /* Centraliza horizontalmente e move para cima */
     text-align: center;
     padding: 10%;
 }
@@ -58,7 +58,6 @@
     bottom: 70px;
     right: 1px;
     width: 1120px;
-    z-index: 1;
 }
 
 .pizza-image img {
@@ -70,10 +69,36 @@
     position: absolute;
     bottom: 70px;
     width: auto; /* Largura automática */
-    z-index: 1;
+
 }
 
 .pizzaria-image img {
-    width: 799px; /* Ajuste conforme necessário */
+    width: auto; /* Ajuste conforme necessário */
     height: 747px;
+}
+
+.empresa {
+    padding: 50px;
+}
+
+.empresa-info {
+    display: table;
+    align-items: center;
+}
+
+.empresa-texto {
+    display: block;
+    background-color: #482c21;
+    height: auto;
+    padding: 60px;
+    text-align: justify;
+}
+
+.empresa-imagem {
+    margin-right: 20px;
+}
+
+.empresa-imagem img {
+    width: auto;
+    height: 200px;
 }
