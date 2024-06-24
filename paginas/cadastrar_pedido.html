@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Estilos/footer.css">
+    <link rel="stylesheet" href="../Estilos/header.css">
+    <link rel="stylesheet" href="../Estilos/cadastrar_pedido.css">
+    <link rel="stylesheet" href="../Estilos/styles.css">
+    <title>Cadastrar Pedido</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo-container">
+                <img src="../Midias/logo1.png" alt="Pizza Plus" class="logo">
+            </div>
+            <ul class="navbar">
+                <li><a href="../index.html">HOME</a></li>
+                <li><a href="../Paginas/pedidos.html">PEDIDOS</a></li>
+                <li><a href="#">CADASTRAR PEDIDO</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Cadastrar Pedido</h1>
+
+        <form id="cadastro-form" onsubmit="return validarCadastro()">
+            <label for="numeroMesa">Número da Mesa:</label>
+            <input type="number" id="numeroMesa" name="numeroMesa" min="1" max="20" required>
+
+            <fieldset>
+                <legend>Cardápio</legend>
+                <div>
+                    <input type="checkbox" id="opcao1" name="cardapio" value="Opção 1">
+                    <label for="opcao1">Opção 1 - Nome do Prato - R$ XX,XX</label>
+                    <input type="number" id="quantidade1" name="quantidade1" min="0">
+                </div>
+                <div>
+                    <input type="checkbox" id="opcao2" name="cardapio" value="Opção 2">
+                    <label for="opcao2">Opção 2 - Nome do Prato - R$ XX,XX</label>
+                    <input type="number" id="quantidade2" name="quantidade2" min="0">
+                </div>
+                <div>
+                    <input type="checkbox" id="opcao3" name="cardapio" value="Opção 3">
+                    <label for="opcao3">Opção 3 - Nome do Prato - R$ XX,XX</label>
+                    <input type="number" id="quantidade3" name="quantidade3" min="0">
+                </div>
+                <div>
+                    <input type="checkbox" id="opcao4" name="cardapio" value="Opção 4">
+                    <label for="opcao4">Opção 4 - Nome do Prato - R$ XX,XX</label>
+                    <input type="number" id="quantidade4" name="quantidade4" min="0">
+                </div>
+                <div>
+                    <input type="checkbox" id="opcao5" name="cardapio" value="Opção 5">
+                    <label for="opcao5">Opção 5 - Nome do Prato - R$ XX,XX</label>
+                    <input type="number" id="quantidade5" name="quantidade5" min="0">
+                </div>
+            </fieldset>
+
+            <label for="valorTotal">Valor Total:</label>
+            <input type="number" id="valorTotal" name="valorTotal" step="0.01" min="0.01" required>
+
+            <button type="submit">Cadastrar</button>
+        </form>
+
+        <p id="mensagem"></p>
+    </main>
+
+    <footer>
+        <div class="contato">
+            <p>&copy; 2024 Pizza Plus. Todos os direitos reservados. | Contato: (698) 9987-6543</p>
+        </div>
+    </footer>
+
+    <script type="module" src="../JavaScript/cadastrar_pedido.js"></script>
+</body>
+</html>

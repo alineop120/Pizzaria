@@ -3,20 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pizzaria</title>
-    <link rel="stylesheet" href="../estilos/styles.css">
-    <link rel="stylesheet" href="../estilos/main.css">
-    <link rel="stylesheet" href="../estilos/header.css">
-    <link rel="stylesheet" href="../estilos/footer.css">
+    <link rel="stylesheet" href="./Estilos/footer.css">
+    <link rel="stylesheet" href="../Estilos/header.css">
+    <link rel="stylesheet" href="../Estilos/pedidos.css">
+    <link rel="stylesheet" href="../Estilos/styles.css">
+    <title>Pedidos</title>
 </head>
 <body>
     <header>
         <nav>
-            <ul>
-                <li><a href="../home.html">Home</a></li>
-                <li><a href="../home.html">Empresa</a></li>
-                <li><a href="pedidos.html">Pedidos</a></li>
-                <li><a href="login.html" class="login-button">Login</a></li>
+            <div class="logo-container">
+                <img src="../Midias/logo1.png" alt="Pizza Plus" class="logo">
+            </div>
+            <ul class="navbar">
+                <li><a href="../index.html">HOME</a></li>
+                <li><a href="#">PEDIDOS</a></li>
+                <li><a href="../Paginas/cadastrar_pedido.html">CADASTRAR PEDIDO</a></li>
             </ul>
         </nav>
     </header>
+
+    <main>
+        <h1>Pedidos</h1>
+
+        <button onclick="window.location.href='../Paginas/cadastrar_pedido.html'">Cadastrar Novo Pedido</button>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Mesa</th>
+                    <th>Pratos/Lanches</th>
+                    <th>Situação</th>
+                    <th>Detalhar</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Prato 1, Prato 2</td>
+                    <td style="color: green;">Em Preparo</td>
+                    <td><button>Detalhar</button></td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Prato 3</td>
+                    <td style="color: red;">Entregue</td>
+                    <td><button>Detalhar</button></td>
+                </tr>
+                <!-- Aqui você pode adicionar mais linhas conforme necessário -->
+            </tbody>
+        </table>
+    </main>
+
+    <footer>
+        <div class="contato">
+            <p>&copy; 2024 Pizza Plus. Todos os direitos reservados. | Contato: (698) 9987-6543</p>
+        </div>
+    </footer>
+</body>
+</html>

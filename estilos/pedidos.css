@@ -1,0 +1,72 @@
+/* Estilos para a página de Pedidos */
+body {
+    background-color: var(--color-primary-1);
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    padding: 28px 8%;
+}
+
+h1 {
+    color: var(--color-primary-6);
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: var(--color-primary-5);
+    color: var(--color-neutral-0);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    margin-bottom: 20px; /* Espaçamento abaixo do botão */
+}
+
+button:hover {
+    background-color: var(--color-primary-3);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: var(--color-neutral-0); /* Fundo branco para a tabela */
+    border-radius: 5px;
+    margin-bottom: 500px; /* Espaço abaixo da tabela */
+}
+
+table th, table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid var(--color-primary-2);
+}
+
+table th {
+    color: var(--color-primary-6);
+    font-size: 1.1rem;
+}
+
+table td {
+    color: var(--color-primary-5);
+    font-size: 1rem;
+}
+
+table td button {
+    background-color: var(--color-primary-5);
+    color: var(--color-neutral-0);
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.875rem;
+    transition: background-color 0.3s ease;
+}
+
+table td button:hover {
+    background-color: var(--color-primary-3);
+}
+

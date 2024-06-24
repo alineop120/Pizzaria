@@ -1,104 +1,146 @@
-/* Estilos específicos para o conteúdo principal */
-.logo-container {
+/* Estilo CSS do HOME */
+#home {
+    display: flex;
+    min-height: calc(100vh - 91px);
     position: relative;
-    margin: -100px auto 0px; /* Centraliza horizontalmente e move para cima */
-    text-align: center;
-    padding: 10%;
 }
 
-.logo-container img {
-    width: 300px;
-    height: 200px;
-    border: 40px solid transparent;
-    border-radius: 200%;
+#cta {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    margin-top: 5%;
 }
 
-.menu {
-    position: absolute;
-    top: calc(50px + 20px); /* Altura do botão (50px) + margem inferior do botão (20px) */
-    height: calc(100% - 70px); /* Altura da janela - altura do botão e margem */
-    width: 41.6%;
-    background-color: rgba(0, 0, 0, 0.7);
-    text-align: center;
-    padding: 100px;
-    box-sizing: border-box;
+#cta .title {
+    font-size: 4rem;
+    color: var(--color-neutral-1);
+}
+
+#cta .title span {
+    color: var(--color-primary-6);
+}
+
+#cta .description {
+    font-size: 1.2rem;
+}
+
+#cta_buttons {
+    display: flex;
+    gap: 24px;
+}
+
+#cta_buttons a {
+    text-decoration: none;
+    color: var(--color-neutral-1);
+}
+
+#phone_button {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 8px 14px;
+    font-weight: 500;
+    box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+}
+
+#phone_button button {
+    box-shadow: none;
+}
+
+#banner {
+    display: flex;
+    align-items: start;
+    justify-content: end;
+    width: 70%;
     z-index: 2;
 }
 
-.menu h2 {
-    font-size: 36px;
-    font-family: 'Garamond', serif;
-    color: white;
-}
-
-.menu p {
-    font-size: 18px;
-    color: white;
-    margin-bottom: 50px; /* Adiciona espaço abaixo do parágrafo */
-}
-
-.menu-button {
-    background-color: #ff9900;
-    padding: 10px 20px;
-    border-radius: 5px;
-    color: white;
-    text-decoration: none;
-    margin-right: 20px;
-    font-size: 18px;
-    transition: background-color 0.3s ease;
-    margin-top: 20px;
-}
-
-.menu-button:hover {
-    background-color: rgba(165, 103, 9);
-}
-
-.pizza-image {
-    position: fixed;
-    bottom: 70px;
-    right: 1px;
-    width: 1120px;
-}
-
-.pizza-image img {
-    width: 100%;
-    height: auto;
-}
-
-.pizzaria-image {
-    position: absolute;
-    bottom: 70px;
-    width: auto; /* Largura automática */
-
-}
-
-.pizzaria-image img {
-    width: auto; /* Ajuste conforme necessário */
-    height: 747px;
-}
-
-.empresa {
-    padding: 50px;
-}
-
-.empresa-info {
-    display: table;
-    align-items: center;
-}
-
-.empresa-texto {
+#banner img {
+    height: 100%;
+    width: 599px;
+    padding: none;
     display: block;
-    background-color: #482c21;
+    max-width: 600px;
+    border-radius: 10px;
+    border: 10px solid var(--color-primary-1);
+}
+
+.shape {
+    background-color: var(--color-primary-2);
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    border-radius: 40% 30% 0% 20%;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+
+/* Estilo CSS da EMPRESA */
+#empresa {
+    display: flex;
+    min-height: calc(100vh - 91px); /* Altura mínima ajustada */
+    position: relative;
+    padding: 70px; /* Ajuste conforme necessário para espaço acima */
+    margin-bottom: -50px;
+}
+
+#texto-empresa {
+    width: 50%; /* Largura da seção de texto */
+    border-radius: 10px;
+    padding: 20px; /* Espaçamento interno */
+    margin-right: 20px; /* Espaço entre texto e imagem */
+}
+
+#texto-empresa h2 {
+    font-size: 2.5rem;
+    color: var(--color-neutral-1);
+    margin-bottom: 20px; /* Espaço abaixo do título */
+}
+
+#texto-empresa p {
+    font-size: 1.1rem;
+    line-height: 1.6; /* Espaçamento entre linhas */
+    margin-bottom: 10px; /* Espaço abaixo de cada parágrafo */
+}
+
+#imagem-empresa {
+    width: 50%; /* Largura da seção de imagem */
+    margin-left: auto; /* Alinha a imagem à direita */
+}
+
+#imagem-empresa img {
     height: auto;
-    padding: 60px;
-    text-align: justify;
+    left: 20px;
+    border-radius: 10px;
+    border: 10px solid var(--color-primary-2);
 }
 
-.empresa-imagem {
-    margin-right: 20px;
+@media screen and (max-width: 1170px) {
+    #home {
+        min-height: 100%;
+        padding-top: 0px;
+    }
+
+    #banner,
+    #banner img,
+    #home .shape {
+        display: none;
+    }
+
+    #cta {
+        width: 100%;
+        text-align: center;
+        align-items: center;
+    }
 }
 
-.empresa-imagem img {
-    width: auto;
-    height: 200px;
+@media screen and (max-width: 450px) {
+    #phone_button button {
+        display: none;
+    }
 }

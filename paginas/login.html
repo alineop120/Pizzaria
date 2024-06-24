@@ -3,20 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pizzaria</title>
-    <link rel="stylesheet" href="../estilos/styles.css">
-    <link rel="stylesheet" href="../estilos/main.css">
-    <link rel="stylesheet" href="../estilos/header.css">
-    <link rel="stylesheet" href="../estilos/footer.css">
+    <link rel="stylesheet" href="../Estilos/login.css"> <!-- Link para o seu arquivo CSS -->
+    <title>Entrar - Pizzaria</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="../home.html">Home</a></li>
-                <li><a href="../home.html">Empresa</a></li>
-                <li><a href="pedidos.html">Pedidos</a></li>
-                <li><a href="login.html" class="login-button">Login</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div class="login-container">
+        <div class="login-box">
+            <img src="../Midias/logo1.png" alt="Pizza Plus" class="logo">
+            <h2>Entrar</h2>
+            <form id="login-form" onsubmit="return validateForm()">
+                <label for="username">Usuário:</label>
+                <input type="text" id="username" name="username" required>
+
+                <label for="password">Senha:</label>
+                <input type="password" id="password" name="password" required>
+
+                <button type="submit">Entrar</button>
+            </form>
+            <p id="message"></p>
+
+            <!-- Botão para voltar para o index.html -->
+            <a href="../index.html" class="back-button">Voltar para o início</a>
+        </div>
+    </div>
+
+    <script src="../JavaScript/login.js"></script>
+</html>

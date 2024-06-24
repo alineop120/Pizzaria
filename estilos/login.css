@@ -1,0 +1,110 @@
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-image: url('../Midias/pizzaria1.jpg'); /* Caminho para a imagem de fundo */
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    
+}
+
+/* Estilos para o container do formulário de login */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ocupa toda a altura da viewport */
+    background-size: cover; /* Para cobrir todo o espaço do container */
+    background-position: center; /* Centraliza a imagem de fundo */
+}
+
+/* Estilos para o box do formulário de login */
+.login-box {
+    background-color: rgba(255, 255, 255, 0.8); /* Fundo branco com 80% de opacidade */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    text-align: center;
+    max-width: 400px; /* Largura máxima do box */
+    width: 90%; /* 90% da largura disponível */
+}
+
+/* Estilos para a logo */
+.logo {
+    max-width: 150px; /* Tamanho máximo da logo */
+    margin-bottom: 20px; /* Espaçamento inferior */
+    border-radius: 100px; /* Borda arredondada */
+    border: 1px solid #ccc; /* Borda com cor cinza claro */
+}
+
+
+/* Estilos para o título do formulário */
+.login-box h2 {
+    color: #333; /* Cor do texto */
+    font-size: 1.5rem; /* Tamanho da fonte */
+    margin-bottom: 20px; /* Espaçamento inferior */
+}
+
+/* Estilos para o formulário */
+.login-box form {
+    display: flex;
+    flex-direction: column; /* Itens dispostos em coluna */
+}
+
+/* Estilos para as labels do formulário */
+.login-box form label {
+    font-weight: bold; /* Texto em negrito */
+    margin-bottom: 8px; /* Espaçamento inferior */
+    color: #333; /* Cor do texto */
+}
+
+/* Estilos para os inputs do formulário */
+.login-box form input {
+    padding: 10px; /* Espaçamento interno */
+    margin-bottom: 15px; /* Espaçamento inferior */
+    border: 1px solid #ccc; /* Borda com cor cinza claro */
+    border-radius: 5px; /* Borda arredondada */
+    font-size: 1rem; /* Tamanho da fonte */
+}
+
+/* Estilos para o botão de enviar do formulário */
+.login-box form button {
+    background-color: #d27744; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto */
+    border: none; /* Sem borda */
+    padding: 12px 20px; /* Espaçamento interno */
+    border-radius: 5px; /* Borda arredondada */
+    cursor: pointer; /* Cursor ao passar */
+    font-size: 1rem; /* Tamanho da fonte */
+    transition: background-color 0.3s ease; /* Transição suave */
+}
+
+/* Estilos para o hover do botão */
+.login-box form button:hover {
+    background-color: #c35c1e; /* Cor de fundo alterada no hover */
+}
+
+/* Estilos para a mensagem de erro */
+.login-box p {
+    color: #c35c1e; /* Cor do texto */
+    font-size: 0.875rem; /* Tamanho da fonte */
+    margin-top: 10px; /* Espaçamento superior */
+}
+
+/* Estilos para o botão de voltar */
+.back-button {
+    display: inline-block; /* Elemento em linha */
+    margin-top: 20px; /* Espaçamento superior */
+    text-decoration: none; /* Sem sublinhado */
+    color: #333; /* Cor do texto */
+    font-weight: bold; /* Texto em negrito */
+    transition: color 0.3s ease; /* Transição suave */
+}
+
+/* Estilos para o hover do botão de voltar */
+.back-button:hover {
+    color: #d27744; /* Cor do texto alterada no hover */
+}

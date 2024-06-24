@@ -1,11 +1,22 @@
-/* Estilos específicos para o rodapé */
-.contato {
-    bottom: 20px;
-    width: 100%;
-    text-align: center;
+footer {
+    background-color: var(--color-primary-2);
 }
 
-.contato p {
-    text-align: center; /* Centraliza o texto horizontalmente */
-    line-height: 1.5; /* Define a altura da linha para centralizar verticalmente */
+#footer_items {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 8% 24px 8%;
+    align-items: center;
+}
+
+#copyright {
+    color: var(--color-neutral-1);;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 600px) {
+    #footer_items {
+        flex-direction: column;
+        gap: 20px;
+    }
 }

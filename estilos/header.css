@@ -1,49 +1,47 @@
-/* Estilos específicos para o cabeçalho */
-nav {
+/* Estilo para o cabeçalho (header) */
+header {
+    width: 100%;
+    padding: 16px 8%;
+    position: sticky;
+    top: 0;
+    background-color: var(--color-primary-1);
+    z-index: 3;
+}
+
+header nav {
     display: flex;
-    justify-content: center;
-    flex-grow: 1;
+    justify-content: space-between;
+    align-items: center;
 }
 
-nav ul {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
+.logo-container {
+    flex: 1; /* Ocupa todo o espaço disponível à esquerda */
 }
 
-nav ul li {
-    margin: 0 50px;
+.logo {
+    border-radius: 100px; /* Borda arredondada */    
+    height: 50px; /* Altura da logo ajustável */
+    vertical-align: middle;
 }
 
-nav ul li a {
+.navbar {
+    list-style-type: none;
+    text-align: right; /* Alinha os itens da lista à direita */
+}
+
+.navbar li {
+    display: inline-block;
+    margin-left: 20px; /* Espaçamento entre os itens */
+}
+
+.navbar li a {
+    color: #1d1d1d;
     text-decoration: none;
-    color: white;
-    font-size: 18px;
-    transition: color 0.3s ease; /* Adiciona uma transição suave para a mudança de cor do texto */
+    font-weight: bold;
+    padding: 10px;
+    transition: all 0.3s ease;
 }
 
-nav ul li a:hover {
-    color: #ff9900; /* Define a cor do texto ao passar o cursor sobre as opções */
+.navbar li a:hover {
+    background-color: #555;
 }
-
-nav ul li a.login-button{
-    text-decoration: none;
-    color: white;
-    font-size: 18px;
-    transition: background-color 0.3s ease; /* Adiciona uma transição suave para a mudança de cor de fundo */
-}
-
-nav ul li a.login-button:hover {
-    background-color: rgb(165, 103, 9); /* Define a cor de fundo ao passar o cursor sobre as opções */
-}
-
-.login-button {
-    background-color: #ff9900;
-    padding: 10px 20px;
-    border-radius: 5px;
-    color: white;
-    text-decoration: none;
-    margin-right: 20px;
-}
-
