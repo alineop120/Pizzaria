@@ -1,3 +1,3 @@
 # Tema do Projeto: Pizzaria
-* Intregantes: Aline, Giovanna e João Gabriel
+* Intregantes: Aline e Giovanna
 * Turma: 2H
